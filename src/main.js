@@ -16,3 +16,11 @@ for(i = 0; i < people.length; i++) {
     console.log(person.canVote());
     console.log(person.toString());
 }
+
+
+override();
+function override() {
+  Person.prototype.toString = function() {
+    return this.name.toUpperCase();
+  }
+}
